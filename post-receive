@@ -1,0 +1,16 @@
+#!/bin/dash
+
+(
+  cd /srv
+)
+# (
+#   cd /srv/frontend
+#   npm i
+#   npx next build
+# )
+killall node
+(
+  cd /srv/backend
+  npm i
+  npx nest start 1>/var/log/vanilla-chat 2>/var/log/vanilla-chat &
+)

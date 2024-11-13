@@ -1,0 +1,12 @@
+Include /etc/ssh/sshd_config.d/*.conf
+Port 33
+ListenAddress 10.7.0.1
+PubkeyAuthentication yes
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+UsePAM no
+X11Forwarding no
+PrintMotd no
+UseDNS no
+AcceptEnv LANG LC_*
+Subsystem	sftp	/usr/lib/openssh/sftp-server
