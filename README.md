@@ -14,3 +14,6 @@ $ curl -X POST chat.ushakov.by/auth/login -d '{"username": "Chopik", "password":
 $ curl chat.ushakov.by/auth/profile -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vybm..."
 {"sub":1,"username":"john","iat":...,"exp":...}
 ```
+## CI
+
+![alt text](https://github.com/a-u-93/chat/blob/master/ci_design.png?raw=true)
